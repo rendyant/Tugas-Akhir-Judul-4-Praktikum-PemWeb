@@ -2,7 +2,7 @@
 
 Aplikasi manajemen kontak sederhana menggunakan **PHP murni** dan **session** tanpa database.  
 Dibuat untuk latihan dasar CRUD, validasi form, dan pengelolaan data dalam sesi.  
-Tampilan dibuat menggunakan **Tailwind CSS** sehingga bersih, modern, dan responsif.
+Tampilan dibuat menggunakan **Tailwind CSS**.
 
 ---
 
@@ -21,8 +21,5 @@ Tampilan dibuat menggunakan **Tailwind CSS** sehingga bersih, modern, dan respon
 - CRUD lengkap: **Create, Read, Update, Delete**
 - Penyimpanan **tanpa database**, hanya menggunakan `$_SESSION`
 - Validasi input dasar (nama, email, nomor telepon, kota)
-- UI rapi memakai **Tailwind CDN**
-- Flow ringan dan mudah dipahami
-- Tidak membutuhkan instalasi tambahan (cukup PHP)
 
 ---

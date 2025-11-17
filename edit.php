@@ -60,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 }
+
 function e($v) { 
     return htmlspecialchars($v ?? '', ENT_QUOTES, 'UTF-8'); 
 }
@@ -105,7 +106,9 @@ function e($v) {
             <form method="POST" class="space-y-5">
                 
                 <div>
-                    <label class="block text-sm font-semibold text-gray-700 mb-2">Nama</label>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        Nama <span class="text-red-500">*</span>
+                    </label>
                     <input type="text" 
                            name="name" 
                            value="<?= e($name) ?>"
@@ -115,7 +118,9 @@ function e($v) {
                 </div>
 
                 <div>
-                    <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        Email <span class="text-red-500">*</span>
+                    </label>
                     <input type="email" 
                            name="email" 
                            value="<?= e($email) ?>"
@@ -124,7 +129,9 @@ function e($v) {
                 </div>
 
                 <div>
-                    <label class="block text-sm font-semibold text-gray-700 mb-2">Nomor HP</label>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        Nomor HP <span class="text-red-500">*</span>
+                    </label>
                     <input type="tel" 
                            name="phone" 
                            value="<?= e($phone) ?>"
@@ -134,7 +141,9 @@ function e($v) {
                 </div>
 
                 <div>
-                    <label class="block text-sm font-semibold text-gray-700 mb-2">Kota</label>
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">
+                        Kota <span class="text-red-500">*</span>
+                    </label>
                     <input type="text" 
                            name="city" 
                            value="<?= e($city) ?>"
@@ -159,8 +168,12 @@ function e($v) {
                         Batal
                     </a>
                 </div>
+
             </form>
+
         </div>
+
     </div>
+
 </body>
 </html>

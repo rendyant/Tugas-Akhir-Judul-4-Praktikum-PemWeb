@@ -28,6 +28,7 @@ function e($v) {
                         <?= count($_SESSION['contacts']) ?> kontak tersimpan
                     </p>
                 </div>
+
                 <a href="add.php" 
                    class="bg-purple-200 hover:bg-purple-300 text-purple-800 font-medium px-5 py-2.5 rounded-full transition-colors">
                     + Tambah
@@ -35,7 +36,6 @@ function e($v) {
             </div>
         </div>
 
-        <!-- Konten -->
         <?php if (empty($_SESSION['contacts'])): ?>
             <div class="bg-white/60 backdrop-blur-sm rounded-3xl shadow-sm p-12 text-center">
                 <div class="text-5xl mb-3">📭</div>

@@ -3,10 +3,12 @@ session_start();
 if (!isset($_SESSION['contacts'])) {
     $_SESSION['contacts'] = [];
 }
+
 function e($v) { 
     return htmlspecialchars($v ?? '', ENT_QUOTES, 'UTF-8'); 
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -19,7 +21,6 @@ function e($v) {
     
     <div class="max-w-5xl mx-auto">
         
-        <!-- Header -->
         <div class="bg-white/60 backdrop-blur-sm rounded-3xl shadow-sm p-6 mb-6">
             <div class="flex items-center justify-between">
                 <div>
@@ -93,7 +94,6 @@ function e($v) {
             </div>
         <?php endif; ?>
 
-        <!-- Footer -->
         <div class="mt-6 text-center">
             <p class="text-gray-600 text-sm">
                 💡 Rendy Antono | Contact Management 2025

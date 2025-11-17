@@ -77,7 +77,6 @@ function e($v) {
     
     <div class="max-w-2xl mx-auto">
         
-        <!-- Back Button -->
         <div class="mb-5">
             <a href="index.php" 
                class="inline-flex items-center gap-1 text-yellow-700 hover:text-yellow-900 font-medium text-sm">
@@ -85,12 +84,10 @@ function e($v) {
             </a>
         </div>
 
-        <!-- Form Card -->
         <div class="bg-white/60 backdrop-blur-sm rounded-3xl shadow-sm p-8">
             
             <h1 class="text-2xl font-bold text-gray-800 mb-6">✏️ Edit Kontak</h1>
 
-            <!-- Error Messages -->
             <?php if (!empty($errors)): ?>
                 <div class="bg-pink-100/70 border border-pink-200 rounded-2xl p-4 mb-6">
                     <p class="font-semibold text-pink-800 mb-2">⚠️ Perhatikan:</p>
@@ -102,7 +99,6 @@ function e($v) {
                 </div>
             <?php endif; ?>
 
-            <!-- Form -->
             <form method="POST" class="space-y-5">
                 
                 <div>
